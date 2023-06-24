@@ -1,0 +1,47 @@
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <button class="navbar-toggler" style="margin-top: 3px;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+       
+        <li class="nav-item">
+              <a class="nav-link" routerLink="homepage">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/defi']" routerLinkActive="router-link-active">Defis</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="openProfil()">Profil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  (click)="mesDefis()">Mes Defis</a>
+        </li>
+      </ul>
+      <form *ngIf="!(userCaurant )" class="d-flex">
+        <button class="btn btn-outline-success" (click)="login()" type="submit">Connexion</button>
+      </form>
+      <a > 
+        <div *ngIf="userCaurant">
+          <button
+            type="button"
+            class="btn gglConnect float-right"
+            data-toggle="dropdown"
+          >
+            <img 
+              [src]="this.userCaurant.photoURL"
+              class="m-2 rounded-circle"
+              width="30"
+              height="30"
+              alt="imgProfile"
+            />
+          </button>
+          <a type="btn btn-outline-success" (click)="logout()"> Deconnexion </a>
+        </div>
+      </a>
+    </div>
+    
+  </div>
+</nav>

@@ -1,0 +1,57 @@
+.spacer{
+    flex: 1 1 auto
+}
+.header {
+    background: #ffffff;
+  }
+  .navbar-brand {
+    font-size: x-large;
+    font-weight: bolder;
+  }
+
+  .account {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    border-radius: unset;
+  }
+  .account > div {
+    height: 100%;
+  }
+  .p-2 {
+    padding: 0 !important;
+  }
+  .gglConnect {
+    padding: 0;
+    right: 0;
+  }
+
+#connexion{
+  position:absolute;
+  left: 90%;
+  height: 30px;
+  text-align: center;
+  margin-top: 7px;
+}
+
+#connexion:hover{
+  color: rgb(44, 81, 89);
+  border-radius: 5px;
+  transition: 1ms;
+}
+
+
+
+
+ 
+  nav {
+    padding: 0 10px;
+    position: relative;
+  }
+  .nav-item {
+    display: flex;
+    margin: 0 5px;
+  }
+  
+  
+  

@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Cyber Chami Grenoble</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+</head>
+
+<body class="is-preload">
+    <!-- Heading -->
+    <div id="heading">
+        <h1>CyberChamis</h1>
+    </div>
+
+    <!-- Main -->
+    <section id="main" class="wrapper">
+        <div class="inner">
+            <div class="content">
+
+                <!-- Elements -->
+                <div class="row">
+                    <div class="col-6 col-12-medium">
+
+                        <!-- Text -->
+                        <h3>Introduction</h3>
+                        <p>Le projet CyberChamis consiste à réaliser un logiciel pour le compte de la communauté des
+                            Chamis et
+                            pour le compte de l'asso GreCha
+                        </p>
+                        <div class="col-md-4 no-trans text-center" style="padding-right: 20px;">
+                            <!-- <img src="https://media.grenoble-tourisme.com/filer_public_thumbnails/filer_public/80/21/802107ab-4f6e-4876-b0de-c06df6a404bf/grenoble_tram_bulles__pierre_jayet-14.jpg__429x431_q90_crop_subsampling-2_upscale.jpg" width="400" height="400" alt="banner"  /> -->
+                        </div>
+                        <!-- Actions -->
+                        <h3>Actions</h3>
+                        <ul class="actions">
+                            <!-- <li><a (click)="routerDefi()" class="button primary">Jouer</a></li>  -->
+                            <li><a class="button primary">Jouer</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-12-medium">
+                        <!-- Blockquote -->
+                        <h3>Description</h3>
+                        <blockquote>A chaque arrêt du tram, vous trouverez les défis associés. Suivez les instructions,
+                            étape par étape.
+                            Puis répondez aux questions pour gagner des points.
+                            Besoin d'aide? Les indices sont à votre disposition, mais attention, ils coutent des points!
+                            Vous pouvez également créer les défis pour les autres joueurs.
+                            Good luck, have fun!
+                        </blockquote>
+                        <h3>Lieu de départ</h3>
+                        <div style="height: 220px" leaflet [leafletOptions]="options" [leafletLayers]="otherLayers">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="inner">
+            <div class="copyright">
+                &copy; Khoi Duong
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
